@@ -79,7 +79,7 @@
               Tu perfil</a>
             <form method="POST" action="{{ route('logout') }}">
               @csrf
-            <a href="{{ route('logout') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2" onclick="event.eventDefault(); 
+            <a href="{{ route('logout') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2" onclick="event.preventDefault();
             this.closest('form').submit();">
               {{ __('Cerrar sesión') }}</a>
             </form>
