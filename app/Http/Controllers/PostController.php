@@ -18,6 +18,7 @@ class PostController extends Controller
     {
         $similares = Post::where('category_id', $post->category_id)
                             ->where('status', 2)
+                            ->where('id', '!=', $post->id)
                             ->latest('id')
                             ->take(6)
                             ->get();
