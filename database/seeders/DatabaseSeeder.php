@@ -6,7 +6,6 @@ use App\Models\Category;
 use App\Models\Tag;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
-
 class DatabaseSeeder extends Seeder
 {
     /**
