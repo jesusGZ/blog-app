@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="container py-8">
-        <h1 class="text-4x1 font-bold text-gray-600">{{ $post->name }}</h1>
+        <h1 class="text-4xl font-bold text-gray-600">{{ $post->name }}</h1>
 
         <div class="text-lg text-gray-500 mb-2">
             {{ $post->extract }}
@@ -18,7 +18,7 @@
             </div>
 
             <aside>
-                <h1 class="text-2x1 font-bold text-gray-600 mb-4">Más en {{ $post->category->name }}</h1>
+                <h1 class="text-2xl font-bold text-gray-600 mb-4">Más en {{ $post->category->name }}</h1>
                 <ul>
                     @foreach($similares as $similar)
                         <li class="mb-4">

@@ -11,7 +11,7 @@
                                 <a href="" class="inline-block px-3 h-6 bg-{{ $tag->color }}-600 text-white rounded-full">{{ $tag->name }}</a>
                             @endforeach
                         </div>
-                        <h1 class="text-4x1 text-white leading-8 font-bold">
+                        <h1 class="text-4xl text-white leading-8 font-bold">
                             <a href="{{ route('post.show', $post) }}">
                                 {{ $post->name }}
                             </a>
@@ -20,9 +20,8 @@
                 </article>
             @endforeach
         </div>
-    </div>
-
-    <div class="mt-4">
-        {{ $posts->links() }}
+        <div class="mt-4">
+            {{ $posts->links() }}
+        </div>
     </div>
 </x-app-layout>
