@@ -5,13 +5,13 @@
                 <article class="w-full h-80 bg-cover bg-center @if($loop->first) md:col-span-2 @endif" 
                     style="background-image: url({{ Storage::url($post->image->url) }}); background-color: #faaaaa;">
                     <div class="w-full h-full px-8 flex flex-col justify-center">
-                      <a href="{{ Storage::url($post->image->url) }}">dddd</a> 
+                      <a href="{{ Storage::url($post->image->url) }}"></a> 
                         <div>
                             @foreach ($post->tags as $tag)
-                                <a href="" class="inline-block px-3 h-6 bg-{{ $tag->color }}-600 text-white rounded-full">{{ $tag->name }}</a>
+                                <a href="{{ route('post.tag', $tag) }}" class="inline-block px-3 h-6 bg-{{ $tag->color }}-600 text-white rounded-full">{{ $tag->name }}</a>
                             @endforeach
                         </div>
-                        <h1 class="text-4xl text-white leading-8 font-bold">
+                        <h1 class="text-4xl text-white leading-8 font-bold mt-2">
                             <a href="{{ route('post.show', $post) }}">
                                 {{ $post->name }}
                             </a>
