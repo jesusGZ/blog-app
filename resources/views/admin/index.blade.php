@@ -8,6 +8,11 @@
 
 @section('content')
     <div class="card">
+
+        <div class="card-header">
+            <a class="btn btn-second" href="{{route('admin.categories.create')}}">Agregar categoria</a>
+        </div>
+
         <div class="card-body">
             <table class="table table-striped">
                 <thead>
@@ -23,10 +28,10 @@
                         <tr>
                             <td>{{$category->id}}</td>
                             <td>{{$category->name}}</td>
-                            <td>
+                            <td width="10px">
                                 <a class="btn btn-primary btn-sm" href="{{route('admin.categories.edit', $category)}}"></a>    
                             </td>
-                            <td>
+                            <td width="10px">
                                 <form action="{{route('admin.categories.destroy', $category)}}" method="POST">
                                     @csrf
                                     @method('delete')
