@@ -254,7 +254,7 @@ return [
         ['header' => 'ADMINISTRADOR'],
         [
             'text' => 'Categorías',
-            'route'  => 'admin.categories',
+            'route'  => 'admin.categories.index',
             'icon' => 'fab fa-fw fa-buffer',
         ],
         [

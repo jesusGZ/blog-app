@@ -3,14 +3,14 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Lista de categorias</h1>
+    <h1>Lista de categorías</h1>
 @stop
 
 @section('content')
     <div class="card">
 
         <div class="card-header">
-            <a class="btn btn-second" href="{{route('admin.categories.create')}}">Agregar categoria</a>
+            <a class="btn btn-primary" href="{{route('admin.categories.create')}}">Agregar categoria</a>
         </div>
 
         <div class="card-body">
@@ -29,7 +29,7 @@
                             <td>{{$category->id}}</td>
                             <td>{{$category->name}}</td>
                             <td width="10px">
-                                <a class="btn btn-primary btn-sm" href="{{route('admin.categories.edit', $category)}}"></a>    
+                                <a class="btn btn-primary btn-sm" href="{{route('admin.categories.edit', $category)}}">Editar</a>    
                             </td>
                             <td width="10px">
                                 <form action="{{route('admin.categories.destroy', $category)}}" method="POST">
