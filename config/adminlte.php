@@ -243,15 +243,13 @@ return [
         ],
         [
             'text' => 'blog',
-            'url'  => 'admin/blog',
+            'route'  => 'admin.home',
             'can'  => 'manage-blog',
         ],
         [
             'text'        => 'Dashboard',
-            'url'         => 'admin/pages',
+            'url'         => 'admin',
             'icon'        => 'fas fa-tachometer-alt',
-            'label'       => 4,
-            'label_color' => 'success',
         ],
         ['header' => 'account_settings'],
         [
