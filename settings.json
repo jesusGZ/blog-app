@@ -1,0 +1,6 @@
+{
+    "[blade]": {
+        "editor.defaultFormatter": "amirmarmul.laravel-blade-vscode",
+        "editor.formatOnSave": true
+    }
+}
