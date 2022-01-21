@@ -44,7 +44,13 @@ class PostController extends Controller
      */
     public function store(StorePostRequest $request)
     {
-        return "ffgf";
+        $post = Post::created($request->all());
+
+        if ($request->tags) {
+            $post->tags()->attach($request->tags);
+        }
+
+        return redirect()->route('admin.posts.edit', $post);
     }
 
     /**
